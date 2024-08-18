@@ -1,4 +1,29 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.nav-search {
+    width: 276px;
+  .form-control {
+      border-radius: 100px;
+    &::placeholder {
+        vertical-align: middle;
+    }
+  }
+  i {
+    right: 20px;
+    color: map-get($theme-colors, "accent-200");
+  }
+}
+.navbar-nav {
+    font-weight: 700;
+    .nav-item {
+        padding: 8px 20px;
+        display: block;
+    }
+    .nav-link {
+        padding: 0;
+    }
+    .custom-navBtn {
+        padding: 16px 24px;
+        color: #fff;
+        background-color: map-get($theme-colors, "accent-200");
+        border-radius: 100px;
+    }
 }
