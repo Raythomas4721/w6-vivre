@@ -20,10 +20,18 @@
     .nav-link {
         padding: 0;
     }
-    .custom-navBtn {
-        padding: 16px 24px;
+}
+nav > .container {
+    border-bottom: 1px solid #ADB5BD;
+}
+//custom-btn
+.custom-btn {
+    padding: 16px 24px;
+    color: #fff;
+    background-color: map-get($theme-colors, "accent-200");
+    border-radius: 100px;
+    font-weight: 900;
+    .nav-link {
         color: #fff;
-        background-color: map-get($theme-colors, "accent-200");
-        border-radius: 100px;
     }
 }

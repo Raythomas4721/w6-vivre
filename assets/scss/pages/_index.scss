@@ -1,0 +1,119 @@
+// banner
+.banner-area {
+  background-image: url(../assets/images/banner.png);
+  height: 621px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  h1,
+  h5 {
+    word-break: keep-all;
+  }
+}
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.bg-basic {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+// home-topic
+.home-topic .card {
+  border-radius: 20px 0px 20px 0px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: brightness(60%);
+  &:hover {
+    filter: brightness(100%);
+    transition: 0.2s ease-in;
+  }
+}
+.theme-1 {
+  background-image: url(../assets/images/theme-1.png);
+}
+.theme-2 {
+  background-image: url(../assets/images/theme-2.png);
+}
+.theme-3 {
+  background-image: url(../assets/images/theme-3.png);
+}
+.theme-4 {
+  background-image: url(../assets/images/theme-4.png);
+}
+.theme-5 {
+  background-image: url(../assets/images/theme-5.png);
+}
+.theme-6 {
+  background-image: url(../assets/images/theme-6.png);
+}
+.theme-7 {
+  background-image: url(../assets/images/theme-7.png);
+}
+.theme-8 {
+  background-image: url(../assets/images/theme-8.png);
+}
+// swiper
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  padding: 0 10px;
+}
+.swiper-pagination {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  color: #343a40;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
+}
+.swiper-button-prev,
+.swiper-button-next {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  margin: 0;
+}
+
+.swiper-button-prev i,
+.swiper-button-next i {
+  border-radius: 100px;
+  width: 24px;
+  height: 24px;
+  padding: 4px 16px;
+  color: #6c757d;
+  border: 1px solid #6c757d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// home-article
+.home-article {
+  .card {
+    border: none;
+    border-bottom: 1px solid #000;
+    border-radius: 4px 4px 0 0 ;
+  }
+  .card-img-top {
+    border-radius: 4px;
+    object-fit: cover;
+    height: 192px;
+  }
+  .read-more {
+    color: map-get($theme-colors, "accent-200");;
+  }
+}
+
