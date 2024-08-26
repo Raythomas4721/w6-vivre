@@ -1,8 +1,44 @@
 a {
-    color: #343A40;
-    vertical-align: middle;
+  color: #343a40;
+  vertical-align: middle;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    letter-spacing: 0.1em;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0.1em;
+  @include mobile {
+    h1 {
+      font-size: 28px;
+    }
+    h2 {
+      font-size: 24px;
+    }
+    h4 {
+      font-size: 20px;
+    }
+    h5 {
+      font-size: 16px;
+    }
+  }
+}
+p {
+  letter-spacing: 0.005em;
+}
+
+// custom-btn
+.custom-btn {
+  padding: 16px 24px;
+  color: #fff;
+  background-color: map-get($theme-colors, "accent-200");
+  &:hover {
+    color: map-get($theme-colors, "accent-200");
+    background-color: #fff;  
+} 
+  @include mobile {
+    padding: 12px 20px;
+  }
 }

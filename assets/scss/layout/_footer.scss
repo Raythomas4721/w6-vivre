@@ -1,0 +1,10 @@
+footer {
+    hr {
+        margin: 0;
+    }
+    @media (max-width:768px) {
+        p {
+            font-size: 14px;
+        }
+    }
+}

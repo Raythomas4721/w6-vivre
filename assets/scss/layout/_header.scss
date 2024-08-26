@@ -1,10 +1,21 @@
+.navbar .container {
+  @include mobile {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @include pad {
+  }
+}
+.navbar-toggler {
+  border: none;
+  &:focus {
+    box-shadow: none;
+  }
+}
 .nav-search {
-    width: 276px;
-  .form-control {
-      border-radius: 100px;
-    &::placeholder {
-        vertical-align: middle;
-    }
+  input {
+    padding: 12px 20px;
+    border-radius: 100px;
   }
   i {
     right: 20px;
@@ -12,26 +23,25 @@
   }
 }
 .navbar-nav {
-    font-weight: 700;
-    .nav-item {
-        padding: 8px 20px;
-        display: block;
-    }
+  column-gap: 20px;
+  .nav-item {
+    padding: 0;
+  }
+  .nav-link {
+    padding: 8px 20px;
+  }
+  @include pad {
+    align-items: flex-start !important;
+    justify-content: flex-start;
+    row-gap: 24px;
     .nav-link {
-        padding: 0;
+      padding: 12px;
     }
+    li:last-child {
+      margin-top: 16px;
+    }
+  }
 }
 nav > .container {
-    border-bottom: 1px solid #ADB5BD;
-}
-//custom-btn
-.custom-btn {
-    padding: 16px 24px;
-    color: #fff;
-    background-color: map-get($theme-colors, "accent-200");
-    border-radius: 100px;
-    font-weight: 900;
-    .nav-link {
-        color: #fff;
-    }
+  border-bottom: 1px solid #adb5bd;
 }
