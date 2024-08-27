@@ -3,8 +3,6 @@
     padding-left: 0;
     padding-right: 0;
   }
-  @include pad {
-  }
 }
 .navbar-toggler {
   border: none;
@@ -39,6 +37,10 @@
     }
     li:last-child {
       margin-top: 16px;
+      width: 100%;
+      button {
+        width: 100%;
+      }
     }
   }
 }

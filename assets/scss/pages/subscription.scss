@@ -1,0 +1,24 @@
+.breadcrumb {
+  a {
+    display: block;
+  }
+  .active {
+    color: map-get($theme-colors, "accent-200");
+  }
+}
+.subscribe {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .card {
+        border-radius: 12px;
+        border: 2px solid map-get($theme-colors , "primary-300" );
+    }
+    @include mobile {
+        padding-top: 16px;
+        padding-bottom: 60px;
+    }
+}
+// .btn-check:not(:checked) + .btn-outline-accent-20 {
+//     color: map-get($theme-colors , "neutral-400" );
+//     background-color: map-get($theme-colors , "neutral-400" );
+// }
