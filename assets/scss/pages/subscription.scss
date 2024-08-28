@@ -7,18 +7,41 @@
   }
 }
 .subscribe {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    .card {
-        border-radius: 12px;
-        border: 2px solid map-get($theme-colors , "primary-300" );
+  padding-top: 100px;
+  padding-bottom: 100px;
+  .card {
+    border-radius: 12px;
+    border: 1px solid map-get($theme-colors, "primary-300");
+    color: map-get($theme-colors, "neutral-400");
+    background-color: #fff;
+    .btn {
+        background:map-get($theme-colors, "neutral-100");
+        color: map-get($theme-colors, "neutral-400");
+        border-radius: 100px;
+        border: none;
+        &:hover {
+            filter: brightness(80%);
+            transition: 0.2s ease-in;
+        }
     }
-    @include mobile {
-        padding-top: 16px;
-        padding-bottom: 60px;
+    &.active {
+        color: map-get($theme-colors, "neutral-500") ;
+        border: 2px solid map-get($theme-colors, "accent-200") ;
     }
+    del {
+        font-size: 22px;
+        font-weight: bold;
+    }
+  }
+  @include mobile {
+    padding-top: 16px;
+    padding-bottom: 60px;
+  }
 }
-// .btn-check:not(:checked) + .btn-outline-accent-20 {
-//     color: map-get($theme-colors , "neutral-400" );
-//     background-color: map-get($theme-colors , "neutral-400" );
-// }
+.btn-group label {
+  color: map-get($theme-colors, "neutral-400");
+  border: none;
+}
+.btn-check:checked + .btn {
+  color: #fff !important;
+}
