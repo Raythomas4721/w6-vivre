@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <title>index</title>
 </head>
 
@@ -26,7 +28,8 @@
       </section>
     </div>
     <div class="container">
-      <section class="home-topic">
+      <section class="home-topic " data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+        data-aos-duration="1000">
         <h2 class="mb-5">熱門主題</h2>
         <div class="row g-1 g-sm-4">
           <div class="col-sm-6 col-md-3 link-btn ">
@@ -71,7 +74,8 @@
           </div>
         </div>
       </section>
-      <section class="home-article">
+      <section class="home-article" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+        data-aos-duration="1000">
         <h2 class="position-absolute ">精選文章</h2>
         <div class="row">
           <div class="col-md-4 d-flex flex-column justify-content-end">
@@ -187,7 +191,8 @@
       </div>
     </section>
     <div class="container">
-      <section class="home-popular-list">
+      <section class="home-popular-list" data-aos="fade-up-right" data-aos-offset="200" data-aos-delay="50"
+        data-aos-duration="1000" data-aos-easing="ease-in-out">
         <h2 class="mb-7">大家都在看</h2>
         <div class="row d-none d-md-flex">
           <div class="col-lg-4">
@@ -265,7 +270,8 @@
                     <li class="bg-primary-300 text-primary-400">#barhopping</li>
                     <li class="bg-primary-300 text-primary-400">#全台酒吧</li>
                   </ul>
-                  <a href="#" class="text-accent-200 fs-6 fs-md-5 mt-5">View More<i class="bi bi-arrow-right ms-2"></i></a>
+                  <a href="#" class="text-accent-200 fs-6 fs-md-5 mt-5">View More<i
+                      class="bi bi-arrow-right ms-2"></i></a>
                 </div>
               </div>
             </div>
@@ -290,7 +296,8 @@
                     <li class="bg-primary-300 text-primary-400">#拉麵</li>
                     <li class="bg-primary-300 text-primary-400">#台北美食</li>
                   </ul>
-                  <a href="#" class="text-accent-200 fs-6 fs-md-5 mt-5">View More<i class="bi bi-arrow-right ms-2"></i></a>
+                  <a href="#" class="text-accent-200 fs-6 fs-md-5 mt-5">View More<i
+                      class="bi bi-arrow-right ms-2"></i></a>
                 </div>
               </div>
             </div>
@@ -315,7 +322,8 @@
                     <li class="bg-primary-300 text-primary-400">#海邊</li>
                     <li class="bg-primary-300 text-primary-400">#無敵海景</li>
                   </ul>
-                  <a href="#" class="text-accent-200 fs-6 fs-md-5 mt-5">View More<i class="bi bi-arrow-right ms-2"></i></a>
+                  <a href="#" class="text-accent-200 fs-6 fs-md-5 mt-5">View More<i
+                      class="bi bi-arrow-right ms-2"></i></a>
                 </div>
               </div>
             </div>
@@ -340,7 +348,8 @@
                     <li class="bg-primary-300 text-primary-400">#出國玩</li>
                     <li class="bg-primary-300 text-primary-400">#東亞</li>
                   </ul>
-                  <a href="#" class="text-accent-200 fs-6 fs-md-5 mt-5">View More<i class="bi bi-arrow-right ms-2"></i></a>
+                  <a href="#" class="text-accent-200 fs-6 fs-md-5 mt-5">View More<i
+                      class="bi bi-arrow-right ms-2"></i></a>
                 </div>
               </div>
             </div>
@@ -366,14 +375,16 @@
                     <li class="bg-primary-300 text-primary-400">#露營控</li>
                     <li class="bg-primary-300 text-primary-400">#凹豆</li>
                   </ul>
-                  <a href="#" class="text-accent-200 fs-6 fs-md-5 mt-5">View More<i class="bi bi-arrow-right ms-2"></i></a>
+                  <a href="#" class="text-accent-200 fs-6 fs-md-5 mt-5">View More<i
+                      class="bi bi-arrow-right ms-2"></i></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="home-for-living">
+      <section class="home-for-living" data-aos="fade-up-left" data-aos-offset="200" data-aos-delay="50"
+        data-aos-duration="1000" data-aos-easing="ease-in-out">
         <div class="d-flex justify-content-between align-items-center mb-7">
           <h2>品味生活</h2>
           <div class="d-none d-md-flex align-items-center gap-7">
@@ -581,7 +592,8 @@
             <div class="d-flex flex-column justify-content-center align-items-center align-items-md-start h-100">
               <h5 class="text-neutral-400 fs-6 fs-md-5 mb-3">今天又不知道要去哪裡了嗎？</h5>
               <h2 class="mb-6">Vivre 給你意想不到的生活風格提案</h2>
-              <button class="btn custom-btn fs-6 fs-md-5" type="button">馬上訂閱<i class="bi bi-arrow-right ms-2"></i></button>
+              <button class="btn custom-btn fs-6 fs-md-5" type="button">馬上訂閱<i
+                  class="bi bi-arrow-right ms-2"></i></button>
             </div>
           </div>
           <div class="swiper mySwiper-1 h-100 d-md-none">
@@ -677,8 +689,11 @@
     </section>
 
     <%- include('./layout/footer'); -%>
-
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script type="module" src="../main.js"></script>
+      <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
